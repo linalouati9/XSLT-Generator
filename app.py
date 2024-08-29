@@ -27,7 +27,7 @@ def home():
         <|end|>\n
         """
 
-        # Check if XML is provided and create the xml_part of the prompt accordingly
+        # Check if XML is provided and create the xml of the prompt accordingly
         xml = f"Here is the XML:\n{data['xml']}" if 'xml' in data and data['xml'] else ""
 
         prompt = PromptTemplate.from_template(template)
